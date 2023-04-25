@@ -1,5 +1,4 @@
 import timeit
-from typing import Union, Dict
 
 
 def bruteforce(a: int) -> int:

@@ -1,7 +1,3 @@
-import timeit
-from typing import Union, Dict
-
-
 def partition(a: list[int]):
     place_ptr = 0
 
