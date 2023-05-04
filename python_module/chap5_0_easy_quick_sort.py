@@ -2,6 +2,7 @@ import random
 
 
 def partition(a: list[int], lo: int, hi: int) -> int:
+    # implemented using https://visualgo.net/en/sorting?slide=12
     # pivot = a[lo]
     # S1 (lower than pivot): lo + 1 .. m
     # S2 (ge than pivot): m .. k
@@ -21,7 +22,6 @@ def qs(a: list[int], lo: int = 0, hi: int = None):
     if hi is None: hi = len(a)
     if hi - lo <= 1: return
 
-    # implemented using https://visualgo.net/en/sorting?slide=12
     pivot_index = partition(a, lo, hi)
     qs(a, lo, pivot_index)
     qs(a, pivot_index + 1, hi)
