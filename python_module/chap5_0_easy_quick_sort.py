@@ -27,9 +27,10 @@ def qs(a: list[int], lo: int = 0, hi: int = None):
     qs(a, pivot_index + 1, hi)
 
 
-a1 = list(range(1, 100))
+ori = list(range(1, 100)) + list(range(1, 100)) + list(range(1, 200))
+a1 = ori[:]
 random.shuffle(a1)
 print(a1)
 qs(a1)
 print(a1)
-assert a1 == list(range(1, 100))
+assert a1 == sorted(ori)
