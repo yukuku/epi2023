@@ -3,8 +3,6 @@ A 2D array can be written as a sequence in several orders-the most natural ones 
 In this problem we explore the problem of writing the 2D array in spiral order.
 """
 
-import random
-
 
 def number(tot: int, r: int, c: int):
     return r * tot + c + 1
